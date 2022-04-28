@@ -1,0 +1,81 @@
+@import "../../../variables.scss";
+.Toastify__toast {
+	border-radius: 4px !important;
+	background-color: #fff !important ;
+	padding: 0px !important;
+}
+
+.Toastify__toast-container {
+	width: 554px !important;
+}
+.Toastify__toast-icon {
+	display: none !important;
+}
+.Toastify__toast-body {
+	padding: 0px !important; 
+}
+.successMessage {
+	width: 554px;
+	min-height: 93px;
+	background: #ffffff;
+	@include border-radius(10px);
+	@include box-shadow(0, 22px, 54px, 0, rgba(72, 84, 101, 0.4));
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.successIcon {
+		background: $greenColor;
+		width: 38px;
+		height: 38px;
+		@include border-radius(50px);
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		left: 30px;
+		top: 25px;
+		font-size: 20px;
+		.fa:before {
+			position: relative;
+		}
+	}
+	.errorIcon {
+		background: $redColor;
+		width: 38px;
+		height: 38px;
+		@include border-radius(50px);
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		left: 30px;
+		top: 25px;
+		font-size: 20px;
+		.fa:before {
+			position: relative;
+		}
+	}
+
+	h5 {
+		color: #254b62;
+		font-family: $bold;
+		font-size: 16px;
+		margin-bottom: 5px;
+		margin-left: 80px;
+	}
+	p {
+		font-size: 14px;
+		color: #254b62;
+		margin-left: 80px;
+	}
+	.alertCross {
+		position: absolute;
+		right: 30px;
+		top: 50%;
+		margin-top: -12px;
+	}
+}
